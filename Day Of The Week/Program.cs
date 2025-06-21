@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        // we have assigned a numeric value to Monday as 1,the following elements will follow accordingly
+        // we have assigned a numeric value to Monday as 1,the other elements will follow accordingly like Tuesday = 2 and so on
         enum DayOfWeek { Monday = 1 , Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
 
         static void Main(string[] args)
@@ -19,7 +19,7 @@
             }
             while (day < 1 || day > 7);
 
-            // accessing the enum values using the assigned numerical value (day)
+            // accessing the enum elements using the assigned numerical value (day)
             Console.WriteLine($"Day is: {(DayOfWeek)day}");
         }
     }
